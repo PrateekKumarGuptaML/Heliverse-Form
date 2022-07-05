@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Step</title>
+    <link rel="stylesheet" href="extras/form.css">
+</head>
+
+<body>
+    <h2 class="step_hed">Step:2</h2>
+    <div class="forms">
+        <form action="none_page.php" class="container" id="form">
+            <fieldset class="fieldset">
+                <legend class="legend">
+                    More Details
+                </legend>
+                <br />
+                <div class="form-control">
+                    <label for="username">User Name:</label>
+                    <input type="text" name="Username" id="username" minlength="4" maxlength="15" value="john231">
+                    <br /><br />
+
+                    <label for="category">Category:</label>
+                    <select name="category" id="category" >
+                        <option value="Gen">Gen</option>
+                        <option value="OBC">OBC</option>
+                        <option value="ST/SC">ST/SC</option>
+                        <option value="Others">Others</option>
+                    </select>
+                    <br /><br />
+
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" maxlength="23" value="570 W Monroe St">
+                    <br>
+                    <input type="text" maxlength="23" value="Chicago, US">
+                </div>
+                Diability:
+                    <input type="radio" name="Yes" id="yes">
+                    <label for="yes">Yes</label>
+                    <input type="radio" name="No" id="no" checked>
+                    <label for="no">No</label>
+                <br /><br /><br />
+
+                <a href="main_form.html" class="btn_back">Back</a>
+                <input type="reset" id="reset">
+                <a href="form2.html" class="btn">Next</a>
+                <br>
+                <br>
+            </fieldset>
+        </form>
+    </div>
+    <script src="extras/form.js"></script>
+</body>
+
+</html>

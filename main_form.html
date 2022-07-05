@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Form</title>
+    <link rel="stylesheet" href="extras/form.css">
+</head>
+
+<body>
+    <h1 class="heading">Web Application Form</h1>
+    <h2 class="step_hed">Step:1</h2>
+    <p class="note">* for above 15 years *</p>
+    <div class="forms">
+        <form action="none_page.php" class="container" id="form">
+            <p class="note"> Make sure that you fill every field otherwise it will <br> autofill information from your google account or default</p>
+            <fieldset class="fieldset">
+                <legend class="legend">
+                    Personal Details
+                </legend>
+                <br />
+                <div class="form-control">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" value="John">
+                    <br /><br />
+
+                    <label for="number">Contact No.:</label>
+                    <select name="Country_code" id="code">
+                        <option value="+1">+1</option>
+                        <option value="+91">+91</option>
+                        <option value="+13">+13</option>
+                    </select>
+                    <input type="tel" name="number" id="number" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required value="193-353-0882">
+                    <br /><br />
+
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" min="16" max="60" value="26">
+
+                </div>
+
+                    Gender:
+                    <input type="radio" name="gender" id="male" checked>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="female">
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="others">
+                    <label for="others">Others</label>
+                
+
+                <br /><br /><br />
+
+                <input type="reset" id="reset">
+                <a href="form1.html" class="btn">Next</a>
+                <br /><br />
+            </fieldset>
+
+        </form>
+    </div>
+    <script src="extras/form.js"></script>
+</body>
+
+</html>

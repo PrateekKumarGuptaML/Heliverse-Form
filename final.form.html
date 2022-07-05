@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Step</title>
+    <link rel="stylesheet" href="extras/form.css">
+</head>
+
+<body>
+    <h2 class="step_hed">Phew! Final Step</h2>
+    <div class="forms">
+        <form action="none_page.php" class="container" id="form">
+            <fieldset class="fieldset">
+                <legend class="legend">
+                    Confirmation
+                </legend>
+                <br />
+                <div class="form-control">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+                    <br /><br /><br />
+                    
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password">
+                    <br />
+                    <small>Error</small>   <!--Place to show validation-->
+                    <br /><br />
+
+                    <label for="cnf_pass">Confirm Password:</label>
+                    <input type="password" id="cnf_pass" class="cnf_pass">
+                    <br />
+                    <small>Error</small>
+                    <br /><br />
+
+                    <label for="edu">Accept:</label>
+                    <input type="checkbox" id="edu" required>
+                    Terms & Conditions
+                    <br>
+                </div>
+                <br>
+
+                <a href="form2.html" class="btn_back">Back</a>
+                <input type="reset" id="reset">
+                <br><br>
+                <button class="sub_btn">Submit</button>
+            </fieldset>
+        </form>
+    </div>
+    <script src="extras/form.js"></script>
+</body>
+
+</html>
